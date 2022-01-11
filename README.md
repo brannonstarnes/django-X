@@ -4,4 +4,4 @@ A Django CRUD application that allows registered users to add a location, its de
 
 ### Pull Request
 
-Click [here]() to view the pull request.
+Click [here](https://github.com/brannonstarnes/django-X/pull/1) to view the pull request.
