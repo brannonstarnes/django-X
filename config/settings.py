@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+   
 
     # Third-party
     'allauth',
@@ -33,6 +34,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+    'destinations',
 ]
 
 # MIDDLEWARE
@@ -171,3 +173,5 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

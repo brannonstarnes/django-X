@@ -1,0 +1,16 @@
+{% extends '_base.html' %} {% block content %}
+<h2>Destination Reviews</h2>
+<ul>
+  {% for destination in object_list %}
+  <li>
+    <h3>
+      <a href="{% url 'destination_detail' destination.pk %}"
+        >{{destination.location}}</a
+      >
+    </h3>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'destination_list' %}">Destination List</a>
+<a href="{% url 'destination_create' %}">Add Destination</a>
+{% endblock content %}

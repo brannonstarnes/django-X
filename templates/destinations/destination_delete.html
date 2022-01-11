@@ -1,0 +1,7 @@
+{% extends '_base.html' %} {% block content %}
+<form action="" method="POST">
+  {% csrf_token %}
+  <p>Are you sure you want to delete {{destination.location}}?</p>
+  <input type="submit" value="Yes" />
+</form>
+{% endblock content %}
