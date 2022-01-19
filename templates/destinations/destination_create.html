@@ -1,0 +1,7 @@
+{% extends '_base.html' %} {% load crispy_forms_tags %} {% block content %}
+<h2>Add a Destination Review</h2>
+<form action="" method="POST" class="uniForm">
+  {% csrf_token %} {{form|crispy}}
+  <input type="submit" value="Add Destination" />
+</form>
+{% endblock content %}

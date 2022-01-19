@@ -1,0 +1,9 @@
+{% extends '_base.html' %} {% block content %}
+<div>
+  <h3>{{destination.location}}</h3>
+  <p><b>Traveler:</b> {{destination.traveler}}</p>
+  <p><b>Description: </b> {{destination.description}}</p>
+  <a href="{% url 'destination_update' destination.pk %}">Update Destination</a>
+  <a href="{% url 'destination_delete' destination.pk %}">Delete Destination</a>
+</div>
+{% endblock content %}
